@@ -1,0 +1,17 @@
+{
+    "name": "buivi/lab5_mvc",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bui Viet Hoang",
+            "email": "buiviethoang18052004@gmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.24"
+    }
+}
