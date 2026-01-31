@@ -8,11 +8,12 @@ class BaseModel {
     protected $conn;
 
     public function __construct() {
-        $servername = "localhost";
-        $database = "buoi2_php";
-        $username = "buoi2_php";
-        $password = "12345";
-        $charset = "utf8mb4";
+
+        $servername = $_ENV['DB_HOST'];
+        $database   = $_ENV['DB_NAME'];
+        $username   = $_ENV['DB_USER'];
+        $password   = $_ENV['DB_PASS'];
+        $charset    = $_ENV['DB_CHARSET'];
 
         try {
             $dsn = "mysql:host=$servername;dbname=$database;charset=$charset";
